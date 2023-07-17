@@ -1,0 +1,20 @@
+CREATE TABLE candle_store (id INTEGER PRIMARY KEY, item TEXT, size INTEGER, quanity INTEGER, price INTEGER);
+
+INSERT INTO candle_store VALUES (1, "vanilla cashmere", 20 , 23, 26.99); 
+INSERT INTO candle_store VALUES (2, "mahogany teakwood", 15, 17, 20.99);
+INSERT INTO candle_store VALUES (3, "fresh cotton", 8, 19, 16.99);
+INSERT INTO candle_store VALUES (4, "tiki paradise", 20, 8, 26.99);
+INSERT INTO candle_store VALUES (5, "brown sugar babe", 20, 20, 26.99);
+INSERT INTO candle_store VALUES (6, "calming lavender", 8, 5, 16.99);
+INSERT INTO candle_store VALUES (7, "peaches N cream", 15, 7, 20.99);
+INSERT INTO candle_store VALUES (8, "lemon delight", 20, 13, 26.99);
+INSERT INTO candle_store VALUES (9, "baked apple pie", 8, 15, 16.99);
+INSERT INTO candle_store VALUES (10, "so fresh N clean", 15, 5, 20.99);
+
+--display the database ordered by size
+SELECT * FROM candle_store
+ORDER BY size desc;
+
+--display the database ordered by quanity
+SELECT * FROM candle_store
+ORDER BY quanity desc;
